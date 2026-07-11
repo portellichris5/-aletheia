@@ -1,169 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aletheia provides assisted, evidence-based reviews of costly decisions before you commit money.">
-  <title>Aletheia — Independent Decision Reviews</title>
-  <style>
-    :root{
-      --bg:#0b0f14;
-      --panel:#121821;
-      --text:#eef2f6;
-      --muted:#a7b0bc;
-      --line:#29313c;
-      --accent:#d8b56c;
-      --accent-dark:#a48343;
-      --max:1040px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    a{color:inherit}
-    .wrap{width:min(var(--max),calc(100% - 32px));margin:auto}
-    header{
-      border-bottom:1px solid var(--line);
-      position:sticky;top:0;
-      background:rgba(11,15,20,.92);
-      backdrop-filter:blur(12px);
-      z-index:10;
-    }
-    nav{height:66px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:800;letter-spacing:.16em;font-size:.92rem}
-    .navlink{text-decoration:none;color:var(--muted);font-size:.92rem}
-    .hero{padding:88px 0 70px}
-    .eyebrow{color:var(--accent);font-weight:750;letter-spacing:.13em;text-transform:uppercase;font-size:.76rem}
-    h1{font-size:clamp(2.5rem,7vw,5.4rem);line-height:1.02;max-width:850px;margin:18px 0 24px;letter-spacing:-.045em}
-    .lead{max-width:700px;color:var(--muted);font-size:clamp(1.05rem,2vw,1.3rem)}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
-    .button{
-      display:inline-block;text-decoration:none;border-radius:8px;
-      padding:13px 18px;font-weight:760;border:1px solid var(--line);
-    }
-    .primary{background:var(--accent);color:#17120a;border-color:var(--accent)}
-    .secondary{background:transparent}
-    section{padding:62px 0;border-top:1px solid var(--line)}
-    h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.12;margin:0 0 18px}
-    .intro{max-width:720px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
-    .card h3{margin:0 0 8px;font-size:1.04rem}
-    .card p{margin:0;color:var(--muted);font-size:.95rem}
-    .steps{counter-reset:item;display:grid;gap:12px;margin-top:28px;max-width:820px}
-    .step{
-      counter-increment:item;background:var(--panel);border:1px solid var(--line);
-      border-radius:10px;padding:18px 20px 18px 64px;position:relative
-    }
-    .step:before{
-      content:counter(item);position:absolute;left:20px;top:18px;
-      width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
-      background:var(--accent);color:#17120a;font-weight:800
-    }
-    .pricebox{
-      max-width:720px;background:var(--panel);border:1px solid var(--line);
-      border-radius:14px;padding:28px;margin-top:26px
-    }
-    .price{font-size:2.5rem;font-weight:850;letter-spacing:-.04em}
-    .small{font-size:.88rem;color:var(--muted)}
-    .notice{border-left:3px solid var(--accent);padding:2px 0 2px 18px;color:var(--muted);max-width:760px}
-    footer{padding:40px 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
-    @media(max-width:760px){
-      .grid{grid-template-columns:1fr}
-      .hero{padding-top:58px}
-      .actions .button{width:100%;text-align:center}
-    }
-  </style>
-</head>
-<body>
-<header>
-  <div class="wrap">
-    <nav>
-      <div class="brand">ALETHEIA</div>
-      <a class="navlink" href="#review">The review</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <div class="wrap hero">
-    <div class="eyebrow">Assisted risk review</div>
-    <h1>Before you commit, reduce uncertainty.</h1>
-    <p class="lead">
-      Aletheia examines the evidence behind costly digital and commercial decisions,
-      identifies risks, assumptions and contradictions, and shows what still needs to
-      be established before you proceed.
-    </p>
-    <div class="actions">
-      <a class="button primary" href="#order">Request a review</a>
-      <a class="button secondary" href="Aletheia_Decision_Review_001_JT_Foxx.pdf">View sample review</a>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <h2>Designed for decisions where getting it wrong is expensive.</h2>
-      <p class="intro">
-        The service is intended for people considering software, AI products, coaching programmes,
-        suppliers, business proposals and other purchases where marketing claims are easier to find
-        than independent evidence.
-      </p>
-      <div class="grid">
-        <div class="card"><h3>Evidence assessment</h3><p>What is supported, what is merely asserted, and what evidence is missing.</p></div>
-        <div class="card"><h3>Risk review</h3><p>Commercial, technical, operational and strategic risks presented clearly.</p></div>
-        <div class="card"><h3>Assumption testing</h3><p>The assumptions on which the decision depends, including those left unstated.</p></div>
-        <div class="card"><h3>Contradiction detection</h3><p>Claims, figures or statements that do not align with one another.</p></div>
-        <div class="card"><h3>Questions to ask</h3><p>The questions that should be answered before money is committed.</p></div>
-        <div class="card"><h3>Decision position</h3><p>Proceed, proceed with caution, seek more evidence, or do not proceed.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="review">
-    <div class="wrap">
-      <h2>The Aletheia review process</h2>
-      <p class="intro">A consistent review structure designed to turn a difficult decision into an auditable evidence record.</p>
-      <div class="steps">
-        <div class="step"><strong>Define the decision.</strong><br>Clarify exactly what is being considered and what outcome matters.</div>
-        <div class="step"><strong>Examine the material.</strong><br>Review submitted documents and relevant public evidence.</div>
-        <div class="step"><strong>Separate fact from assumption.</strong><br>Identify what is known, inferred, claimed or absent.</div>
-        <div class="step"><strong>Assess risk and confidence.</strong><br>Explain where uncertainty remains and why it matters.</div>
-        <div class="step"><strong>Deliver a written review.</strong><br>Provide findings, questions and a clear decision position.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="order">
-    <div class="wrap">
-      <h2>Launch review</h2>
-      <p class="intro">A structured review of one decision and the supporting documents, normally delivered within 48 hours.</p>
-      <div class="pricebox">
-        <div class="price">£49</div>
-        <p>Includes an executive summary, evidence assessment, risks, assumptions, contradictions, missing information, key questions and an overall decision position.</p>
-        <p><strong>To request a review:</strong> replace the email address below with your working address before publishing.</p>
-        <a class="button primary" href="mailto:YOUR_EMAIL_HERE?subject=Aletheia%20Decision%20Review%20Request">Email Aletheia</a>
-        <p class="small">Do not send highly sensitive personal, banking or identity documents by ordinary email.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="notice">
-        Aletheia provides research, document analysis and decision support. It does not provide legal,
-        regulated financial, medical or other professionally regulated advice, and it does not guarantee outcomes.
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">© 2026 Aletheia. Evidence first. Conclusions second.</div>
-</footer>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aletheia</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;background:#f8f9fb;color:#222;line-height:1.6}
+.card{background:#fff;padding:24px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+h1{font-size:3rem;margin-bottom:.2rem}.tag{color:#555;font-size:1.2rem}
+.button{display:inline-block;background:#222;color:#fff;text-decoration:none;padding:12px 18px;border-radius:6px}
+</style></head><body><div class="card">
+<h1>Aletheia</h1>
+<p class="tag"><strong>Truth extracted from complexity.</strong></p>
+<p>Aletheia provides structured, AI-assisted decision analysis to help people evaluate evidence, understand risk and make better-informed decisions.</p>
+<h2>Current Services</h2>
+<ul>
+<li>Business opportunity reviews</li>
+<li>Investment due diligence</li>
+<li>Legal evidence reviews</li>
+<li>Technology and AI assessments</li>
+</ul>
+<h2>Our Approach</h2>
+<p>We combine disciplined reasoning with AI-assisted analysis. Every conclusion should be transparent, evidence-based and open to challenge.</p>
+<h2>First Published Review</h2>
+<p><strong>Decision Review 001</strong><br>Assessment of the JT Foxx business opportunity.</p>
+<p><a class="button" href="#">Read Review (Coming Soon)</a></p>
+<p><small>© 2026 Aletheia. Website under active development.</small></p>
+</div></body></html>
